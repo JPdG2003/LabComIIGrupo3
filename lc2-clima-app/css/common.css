@@ -58,12 +58,15 @@ nav li a {
     font-size: 1em;
     font-weight: bold;
     color: var (--color-active);
+    color: #5df2d6;
 }
 
 nav li.current-page a {
     color: var (--color-theme);
     background-color: var (--color-active);
     pointer-events: none;
+    background-color:#00ebc4;
+    color: #00594c;
 }
 
 main {
