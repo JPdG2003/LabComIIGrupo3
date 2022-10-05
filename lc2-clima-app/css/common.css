@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 :root {
@@ -36,7 +35,9 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background: var(--color-gradient);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 nav>ul {
@@ -57,20 +58,22 @@ nav li a {
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
-    color: var (--color-active);
-    color: #5df2d6;
+    color: var(--color-active);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
 }
 
 nav li.current-page a {
-    color: var (--color-theme);
-    background-color: var (--color-active);
+    color: var(--color-theme);
+    background-color: var(--color-active);
     pointer-events: none;
     background-color:#00ebc4;
     color: #00594c;
 }
 
 main {
-    margin-top: 120px;
+    margin-top: 90px;
     overflow: auto;
     padding: 16px;
     padding-bottom: 60px;
@@ -90,13 +93,13 @@ h1>img {
 }
 
 h2 {
-    color: var (--color-theme);
-    margin: 16px 0;
+    color: var(--color-theme);
+    margin: 10px 0;
     text-align: center;
 }
 
 h3 {
-    color: var (--color-theme);
+    color: var(--color-theme);
     margin: 8px 0;
 }
 
@@ -108,7 +111,7 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background: var (--color-theme);
+    background: var(--color-gradient);
     width: 100%;
     text-align: center;
     padding-top: 10px;

@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input#ciudad{
+    height: 33px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+input#Agregar{
+    margin-top: 10px;
+    background-color: var(--color-theme);
+    border-style: none;
+    border-radius: 8px;
+    color: white;
+    width: 80px;
+    height: 35px;
+    
+}
+section form div{
+    display: flex;
+    justify-content: center;
+}
+
+.aviso{
+    display: inline;
+    width: 350px;
+    text-align: center;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    
+}
+
+#Success{
+    background-color: #28a745;
+    color: white;
+   
+}
+
+
+#Error {
+    background-color: #dc3545;
+    color: white;
+    margin: 30px;
+    height: 60px;
+}
+
+
+#Warning {
+    background-color: #ffc107;
+    color: white;
+}
+

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>&#9925; Clima App</title>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/add-city.css">
 </head>
 
 <body>
@@ -26,12 +27,19 @@
         <h2>Agregar Ciudad</h2>
         <section>
             <form>
-                <label for="ciudad">Ingrese la ciudad a agregar:</label>
-                <input type="text" id="ciudad" name="ciudad"><br>
-                <input type="submit" value="Agregar">
+                <label for="ciudad">Ingrese la ciudad a agregar:</label><br>
+                <input type="text" id="ciudad" name="ciudad" size="26"><br>
+                <div><input type="submit" value="Agregar" id="Agregar"></div>
+                
             </form>
         </section>
     </main>
+
+    <input class="aviso" id="Success" type="reset" value="Ciudad agregada con éxito"><br>
+    <input class="aviso" id="Error" type="reset" value="Error: La ciudad ingresada no se encuentra en la API o 
+    se produjo un error al consultar"><br>
+    <input class="aviso" id="Warning" type="reset" value="Ciudad agregada con éxito">
+
     <footer>
         <p>
             Desarrollado con ♥ - LC2

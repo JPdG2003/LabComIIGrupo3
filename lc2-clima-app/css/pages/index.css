@@ -1,0 +1,33 @@
+select#ciudades {
+height: 35px;
+width: 190px;
+border-radius: 5px;
+}
+
+form ul{
+    display: flex;
+}
+
+li select{
+    margin-right: 5px;
+}
+
+input#consultarClima{
+    height: 35px;
+    width: 80px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: var(--color-theme);
+    color:white;
+    font-weight: bold;
+}
+
+div.card {
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 4px gray;
+    font-size: 15px;
+    line-height: 10px;
+}
