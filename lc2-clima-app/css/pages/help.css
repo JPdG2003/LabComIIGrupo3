@@ -51,21 +51,17 @@ div.flex2 input#limpiar, input#enviar {
 }
 
 
-div.text {
-    align-self: center;
-    margin: 0px;
+form p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    
-}
-
-input#emailvalido
-{
-    text-align: center;
-    margin-top: 40px;
     background-color: #dc3545;
-    border-style: none;
-    border-radius: 10px;
+    margin-top: 40px;
     color: white;
     width: 300px;
     height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 14px;
 }

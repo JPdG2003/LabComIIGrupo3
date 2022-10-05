@@ -19,7 +19,7 @@ input#Agregar{
     color: white;
     width: 80px;
     height: 35px;
-    
+    font-weight: bold;
 }
 section form div{
     display: flex;
@@ -27,19 +27,20 @@ section form div{
 }
 
 .aviso{
-    display: inline;
-    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    width: 360px;
     height: 40px;
     border-radius: 10px;
     border-style: none;
-    
+    font-size: 14px;
 }
 
 #Success{
     background-color: #28a745;
     color: white;
-   
 }
 
 
