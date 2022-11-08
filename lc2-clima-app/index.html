@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/index.css">
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/index.js" defer></script>
 </head>
 
 <body>
@@ -31,28 +33,27 @@
                 <ul>
                     <li>
                         <select name="ciudades" id="ciudades">
-                            <option value="" - disabled - selected>Seleccionar ciudad</option>
-                            <option value="ROSARIO">Rosario</option>
-                            <option value="RAFAELA">Rafaela</option>
+                            <option value="Seleccionar ciudad" - disabled - selected>Seleccionar ciudad</option>
                         </select>
                     </li>
                     <li>
-                        <input id="consultarClima" type="submit" value="Consultar">
+                        <input id="consultarClima" type="button" value="Consultar">
                     </li>
                 </ul>
             </form>
         </section>
         <br><br>
         <section id="section-weather-result">
-            <div class="card">
-                <h3>Rosario</h3>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="CLIMA" style="width:50%">
+            <div class="spinner" id="spinner"></div>
+            <div class="card" id="resultadoClima">
+                <h3 id="ciudad"></h3>
+                <p id="icono"></p>
                 <div class="container">
-                    <p>Temperatura: 25.31°</p>
-                    <p>Sensacion termica: 24.65°</p>
-                    <p>Humedad: 29%</p>
-                    <p>Velocidad del viento: 4.63 km/h</p>
-                    <p>Presion: 1011 P</p>
+                    <p id="temp"></p>
+                    <p id="sensacionTermica"></p>
+                    <p id="humedad"></p>
+                    <p id="velViento"></p>
+                    <p id="presion"></p>
                 </div>
             </div>
         </section>

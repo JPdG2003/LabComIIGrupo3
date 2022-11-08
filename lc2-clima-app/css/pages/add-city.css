@@ -11,7 +11,7 @@ input#ciudad{
     border-style: solid;
 }
 
-input#Agregar{
+input#Agregar, input#eliminarCiudades{
     margin-top: 10px;
     background-color: var(--color-theme);
     border-style: none;
@@ -24,10 +24,11 @@ input#Agregar{
 section form div{
     display: flex;
     justify-content: center;
+    justify-content: space-around;
 }
 
 .aviso{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     text-align: center;

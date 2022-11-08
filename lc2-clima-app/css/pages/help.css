@@ -11,7 +11,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    align-items: center;
     width: 900px;
 }
 
@@ -50,13 +50,15 @@ div.flex2 input#limpiar, input#enviar {
     border-radius: 8px;
 }
 
-
-form p {
+.caja{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #dc3545;
+}
+
+.boton_verde{
+    background-color: green;
     margin-top: 40px;
     color: white;
     width: 300px;

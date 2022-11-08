@@ -7,6 +7,8 @@
     <title>&#9925; Clima App</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/help.css">
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/help.js" defer></script>
 </head>
 
 <body>
@@ -29,24 +31,29 @@
         <p>Para poder consultar el clima, primero deberá <a href="add-city.html">Agregar una ciudad</a> y luego
             seleccionar la Ciudad en cuestión desde la pagina <a href="index.html">Clima</a>.</p>
         <div class="flex">
-            <form>
+            <form id="help-form">
                 <label id="nombre" for="name">Nombre:</label><br>
-                <input type="text" id="name" name="name" size="33"><br>
+                <input type="text" id="name" name="nombre" size="33" required><br>
                 <label id="mail" for="email">Email:</label><br>
-                <input type="email" id="email" name="email" size="33"><br>
+                <input type="email" id="email" name="email" size="33" required><br>
                 <label id="message" for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="9" cols="32"></textarea><br>
-                <div class="flex2">
-                    <input id="limpiar" type="reset" value="Limpiar">
+                <textarea id="mensaje" name="msj" rows="9" cols="32" required></textarea><br>
+                <div class="flex2" id="cajaBoton">
+                    <input id="limpiar" type="button" value="Limpiar">
                     <input id="enviar" type="submit" value="Enviar">
                 </div>
-                <p id="emailvalido">Ingresar un Email valido</p>
             </form>
-        </div>
-    </main>
 
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+                emailjs.init('kQFseqj_ptAD-R0V6')
+            </script>
+        </div>
+        <div id="caja"></div>
+    </main>
     
-        
     
     <footer>
         <p>

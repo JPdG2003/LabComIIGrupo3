@@ -22,7 +22,9 @@ input#consultarClima{
     font-weight: bold;
 }
 
+
 div.card {
+    display: none;
     text-align: center;
     width: 250px;
     height: 300px;

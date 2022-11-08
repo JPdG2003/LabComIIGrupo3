@@ -7,6 +7,8 @@
     <title>&#9925; Clima App</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/add-city.css">
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/add-city.js" defer></script>
 </head>
 
 <body>
@@ -29,15 +31,17 @@
             <form>
                 <label for="ciudad">Ingrese la ciudad a agregar:</label><br>
                 <input type="text" id="ciudad" name="ciudad" size="26"><br>
-                <div><input type="submit" value="Agregar" id="Agregar"></div>
-                
+                <div><input type="button" value="Agregar" id="Agregar">
+                    <input type="button" value="Borrar" id="eliminarCiudades">
+                </div>
             </form>
         </section>
     </main>
 
-    <p class="aviso" id="Success">Ciudad agregada con éxito</p><br>
-    <p class="aviso" id="Error">Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar"</p><br>
-    <p class="aviso" id="Warning">La ciudad ingresada ya se encuentra almacenada</p>
+    <div class="aviso" id="Success">Ciudad agregada con éxito</div><br>
+    <div class="aviso" id="Error">Error: la ciudad ingresada no se encuentra en la API o se produjo un error al consultar</div><br>
+    <div class="aviso" id="Warning">La ciudad ingresada ya se encuentra almacenada</div>
+    <div class="spinner" id="spinner"></div>
 
     <footer>
         <p>
